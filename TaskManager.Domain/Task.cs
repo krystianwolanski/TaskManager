@@ -14,8 +14,8 @@ public class Task
         _state = new InBacklogState(this);
     }
 
-    public string Id { get; set; }
-    public string Name { get; set; }
+    public string Id { get; }
+    public string Name { get; }
 
     public void AddSubscriber(ISubscriber subscriber)
     {
